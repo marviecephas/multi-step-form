@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>multistep form</title>
+    <link rel = "stylesheet" href = "style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id = "main-container">
+        <div id = "step-container">
+            <img src = "bg-sidebar-mobile.svg" class = "bg-mobile">
+            <img src = "bg-sidebar-desktop.svg" class = "bg-desktop">
+            <div class = "step-main">
+                <p class = "step current-step">1</p>
+                <div class = "sub-container">
+                    <p class = "step-number">Step 1</p>
+                    <p class = "step-name">Your info</p>
+                </div>
+            </div>
+            <div class = "step-main">
+                <p class = "step">2</p>
+                <div class = "sub-container">
+                    <p class = "step-number">Step 2</p>
+                    <p class = "step-name">Select plan</p>
+                </div>
+            </div>
+            <div class = "step-main">
+                <p class = "step">3</p>
+                <div class = "sub-container">
+                    <p class = "step-number">Step 3</p>
+                    <p class = "step-name">Add-ons</p>
+                </div>
+            </div>
+            <div class = "step-main">
+                <p class = "step">4</p>
+                <div class = "sub-container">
+                    <p class = "step-number">Step 4</p>
+                    <p class = "step-name">Summary</p>
+                </div>
+            </div>
+        </div>
+        <div id = "form-container">
+            <div class = "sub-form-container current-form">
+                <div class = "form-main">
+                <h2 class = "step-heading">Personal info</h2>
+                <p class = "step-info">Please provide your name, email address, and phone number.</p>
+                <div class = "sub-form">
+                    <div class = "label-validation">
+                        <p class = "label">Name</p>
+                        <p class = "validation">This field is required</p>
+                    </div>
+                    <input type = "text" class = "input-name" placeholder = "e.g. Stephen King">
+                    <div class = "label-validation">
+                        <p class = "label">Email Address</p>
+                        <p class = "validation">This field is required</p>
+                    </div>
+                    <input type = "email" class = "input-email" placeholder = "e.g. stephenking@lorem.com">
+                    <div class = "label-validation">
+                        <p class = "label">Phone Number</p>
+                        <p class = "validation">This field is required</p>
+                    </div>
+                    <input type = "number" class = "input-num" placeholder = "e.g. +1 234 567 890">
+                </div>
+            </div>
+            <div class = "nav-steps">
+                    <div class = "nav-main">
+                    <p class = "next">next step</p>
+                </div>
+                </div>
+            </div>
+            <div class = "sub-form-container">
+                <div class = "form-main">
+                <h2 class = "step-heading">Select your plan</h2>
+                <p class = "step-info">You have the option of monthly or yearly billing.</p>
+                <div class = "sub-form">
+                  <div class = "plan-form">
+                    <div class = "plan-container">
+                        <img src = "icon-arcade.svg" class = "plan-icon">
+                        <div class = "plan-main">
+                            <h3 class = "plan">Arcade</h3>
+                            <p class = "plan-cost">$<span class = "cost">9</span>/<span class = "cycle">mo</span></p>
+                            <h4 class = "free-duration">2 months free</h4>
+                        </div>
+                    </div>
+                    <div class = "plan-container">
+                        <img src = "icon-advanced.svg" class = "plan-icon">
+                        <div class = "plan-main">
+                            <h3 class = "plan">Advanced</h3>
+                            <p class = "plan-cost">$<span class = "cost">12</span>/<span class = "cycle">mo</span></p>
+                            <h4 class = "free-duration">2 months free</h4>
+                        </div>
+                    </div>
+                    <div class = "plan-container">
+                        <img src = "icon-pro.svg" class = "plan-icon">
+                        <div class = "plan-main">
+                            <h3 class = "plan">Pro</h3>
+                            <p class = "plan-cost">$<span class = "cost">15</span>/<span class = "cycle">mo</span></p>
+                            <h4 class = "free-duration">2 months free</h4>
+                        </div>
+                    </div>
+                    </div>
+                    <div class = "plan-cycle">
+                        <h4 class = "monthly current-cycle">monthly</h4>
+                        <div class = "cycle-toggle">
+                            <div class = "toggle-main"></div>
+                        </div>
+                        <h4 class = "yearly">yearly</h4>
+                    </div>   
+                </div>
+            </div>
+            <div class = "nav-steps">
+                    <div class = "nav-main">
+                    <p class = "previous">go back</p>
+                    <p class = "next">next step</p>
+                </div>
+                </div>
+            </div>
+            <div class = "sub-form-container">
+                <div class = "form-main">
+                <h2 class = "step-heading">Pick add-ons</h2>
+                <p class = "step-info">Add-ons help enhance your gaming experience.</p>
+                <div class = "sub-form">
+                    <div class = "add-on-container">
+                        <div class = "sub-add-on">
+                              <div class = "checkbox">
+                                <img src = "icon-checkmark.svg" class = "check-icon">
+                            </div>
+                            <div class = "add-on-main">
+                                <h4 class = "add-on">Online service</h4>
+                                <p class = "add-on-info">Access to multiplayer games</p>
+                            </div>  
+                        </div>
+                        <p class = "add-on-cost">+$<span class = "cost">1</span>/<span class = "cycle">mo</span></p>
+                    </div>
+                    <div class = "add-on-container">
+                        <div class = "sub-add-on">
+                              <div class = "checkbox">
+                                <img src = "icon-checkmark.svg" class = "check-icon">
+                            </div>
+                            <div class = "add-on-main">
+                                <h4 class = "add-on">Larger storage</h4>
+                                <p class = "add-on-info">Extra 1TB of cloud save</p>
+                            </div>  
+                        </div> 
+                        <p class = "add-on-cost">+$<span class = "cost">2</span>/<span class = "cycle">mo</span></p>
+                    </div>
+                    <div class = "add-on-container">
+                        <div class = "sub-add-on">
+                                <div class = "checkbox">
+                                <img src = "icon-checkmark.svg" class = "check-icon">
+                            </div>
+                            <div class = "add-on-main">
+                                <h4 class = "add-on">Customizable Profile</h4>
+                                <p class = "add-on-info">Custom theme on your profile</p>
+                            </div>    
+                        </div>
+                        <p class = "add-on-cost">+$<span class = "cost">2</span>/<span class = "cycle">mo</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class = "nav-steps">
+                <div class = "nav-main">
+                    <p class = "previous">go back</p>
+                    <p class = "next">next step</p>
+                </div>
+                </div>
+            </div>
+            <div class = "sub-form-container">
+                <div class = "form-main">
+                <h2 class = "step-heading">Finishing up</h2>
+                <p class = "step-info">Double-check everything looks OK before confirming.</p>
+                <div class = "sub-form">
+                   <div class = "preview-container">
+                       <div class = "preview-main plan-preview">
+                           <div class = "sub-preview">
+                               <h3 class = "selected-plan">Plan<span class = "sel-plan-cycle"></span></h3>
+                               <p class = "change">Change</p>   
+                           </div>
+                           <p class = "selected-plan-cost">$<span class = "cost">0</span>/<span class = "cycle-short">mo</span></p>
+                           </div>
+                       </div>
+                           <div class = "total-main">
+                               <p class = "total-cycle">Total (per <span class = "cycle-finish">month</span>)</p>
+                               <h4 class= "total-cost">+$<span class = "cost-main">0</span>/<span class = "cycle">mo</span></h4>
+                   </div>
+                </div>
+            </div>
+            <div class = "nav-steps">
+                <div class = "nav-main">
+                    <p class = "previous">go back</p>
+                    <p class = "comfirm">comfirm</p>
+                </div>
+               </div>
+            </div>
+            <div class = "sub-form-container">
+               <div class = "form-main thanks-main">
+                <img src = "icon-thank-you.svg" class = "thanks-icon">
+                <h2 class = "step-heading thanks-heading">Thank you!</h2>
+                <p class = "thanks-message">Thanks for confirming your subscription! We hope you have fun 
+  using our platform. If you ever need support, please feel free 
+  to email us at support@loremgaming.com.</p>
+            </div> 
+            </div>
+        </div>
+    </div>
+    <script src = "main.js"></script>
+</body>
+</html>
